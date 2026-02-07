@@ -1,0 +1,17 @@
+<changelist name="Uncommitted_changes_before_Checkout_at_07_02_2026_17_21_[Changes]" date="1770481302998" recycled="true" deleted="true">
+  <option name="PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2026_17_21_[Changes]/shelved.patch" />
+  <option name="DESCRIPTION" value="Uncommitted changes before Checkout at 07/02/2026 17:21 [Changes]" />
+  <binary>
+    <option name="BEFORE_PATH" value="../../Content/Levels/Sokoban.umap" />
+    <option name="AFTER_PATH" value="../../Content/Levels/Sokoban.umap" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2026_17_21_[Changes]/Sokoban.umap" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Content/BP/PC_SokobanPlayerControler.uasset" />
+    <option name="AFTER_PATH" value="../../Content/BP/PC_SokobanPlayerControler.uasset" />
+    <option name="SHELVED_PATH" value="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_07_02_2026_17_21_[Changes]/PC_SokobanPlayerControler.uasset" />
+  </binary>
+  <binary>
+    <option name="BEFORE_PATH" value="../../Content/BP_CPP/BP_PawnCPP.uasset" />
+  </binary>
+</changelist>
