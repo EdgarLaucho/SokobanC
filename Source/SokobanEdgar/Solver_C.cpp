@@ -18,10 +18,12 @@ ASolver_C::ASolver_C()
 	BoxCol->SetupAttachment(Root);
 
 	BoxCol->SetCollisionEnabled(ECollisionEnabled::QueryOnly);
-	BoxCol->SetCollisionObjectType(ECollisionChannel::ECC_WorldStatic);
-	BoxCol->SetCollisionObjectType(ECC_WorldDynamic);
+	BoxCol->SetCollisionObjectType(ECC_WorldStatic);
+
 	BoxCol->SetCollisionResponseToAllChannels(ECR_Ignore);
 	BoxCol->SetCollisionResponseToChannel(ECC_WorldDynamic, ECR_Overlap);
+	BoxCol->SetCollisionResponseToChannel(ECC_PhysicsBody, ECR_Overlap);
+	BoxCol->SetCollisionResponseToChannel(ECC_Pawn, ECR_Overlap);;
 
 
 }
