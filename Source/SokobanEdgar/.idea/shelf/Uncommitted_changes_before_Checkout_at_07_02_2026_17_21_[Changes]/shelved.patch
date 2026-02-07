@@ -1,0 +1,154 @@
+Index: SokobanPawnCPP.cpp
+===================================================================
+diff --git a/SokobanPawnCPP.cpp b/SokobanPawnCPP.cpp
+deleted file mode 100644
+--- a/SokobanPawnCPP.cpp	(revision 2af97f48c1ec54fa1da0a59045f0240b55dc03c4)
++++ /dev/null	(revision 2af97f48c1ec54fa1da0a59045f0240b55dc03c4)
+@@ -1,34 +0,0 @@
+-// Fill out your copyright notice in the Description page of Project Settings.
+-
+-
+-#include "SokobanPawnCPP.h"
+-
+-// Sets default values
+-ASokobanPawnCPP::ASokobanPawnCPP()
+-{
+- 	// Set this pawn to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
+-	PrimaryActorTick.bCanEverTick = true;
+-
+-}
+-
+-// Called when the game starts or when spawned
+-void ASokobanPawnCPP::BeginPlay()
+-{
+-	Super::BeginPlay();
+-	
+-}
+-
+-// Called every frame
+-void ASokobanPawnCPP::Tick(float DeltaTime)
+-{
+-	Super::Tick(DeltaTime);
+-
+-}
+-
+-// Called to bind functionality to input
+-void ASokobanPawnCPP::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
+-{
+-	Super::SetupPlayerInputComponent(PlayerInputComponent);
+-
+-}
+-
+Index: SokobanPawnCPP.h
+===================================================================
+diff --git a/SokobanPawnCPP.h b/SokobanPawnCPP.h
+deleted file mode 100644
+--- a/SokobanPawnCPP.h	(revision 2af97f48c1ec54fa1da0a59045f0240b55dc03c4)
++++ /dev/null	(revision 2af97f48c1ec54fa1da0a59045f0240b55dc03c4)
+@@ -1,32 +0,0 @@
+-// Fill out your copyright notice in the Description page of Project Settings.
+-
+-#pragma once
+-
+-#include "CoreMinimal.h"
+-#include "GameFramework/Pawn.h"
+-#include "SokobanPawnCPP.generated.h"
+-
+-UCLASS()
+-class SOKOBANEDGAR_API ASokobanPawnCPP : public APawn
+-{
+-	GENERATED_BODY()
+-
+-public:
+-	// Sets default values for this pawn's properties
+-	ASokobanPawnCPP();
+-
+-protected:
+-	// Called when the game starts or when spawned
+-	virtual void BeginPlay() override;
+-
+-public:	
+-
+-	UPRPRETY(EditAnyWher, BlueprintReadWrite)
+-	float MoveStep = 100.0f;
+-	// Called every frame
+-	virtual void Tick(float DeltaTime) override;
+-
+-	// Called to bind functionality to input
+-	virtual void SetupPlayerInputComponent(class UInputComponent* PlayerInputComponent) override;
+-
+-};
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1770481127008)
++++ b/.idea/encodings.xml	(date 1770481127008)
+@@ -0,0 +1,4 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding" addBOMForNewFiles="with BOM under Windows, with no BOM otherwise" />
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/vcs.xml b/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1770481184550)
++++ b/.idea/vcs.xml	(date 1770481184550)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$/../.." vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/indexLayout.xml b/.idea/indexLayout.xml
+new file mode 100644
+--- /dev/null	(date 1770481184540)
++++ b/.idea/indexLayout.xml	(date 1770481184540)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="UserContentModel">
++    <attachedFolders />
++    <explicitIncludes />
++    <explicitExcludes />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1770481134662)
++++ b/.idea/.gitignore	(date 1770481134662)
+@@ -0,0 +1,13 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Rider ignored files
++/contentModel.xml
++/projectSettingsUpdater.xml
++/.idea.SokobanEdgar.iml
++/modules.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
